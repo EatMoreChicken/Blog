@@ -32,3 +32,9 @@ If no interface exists, click `Add` and populate the fields with these values an
 Bind to port:`8080`
 Bind to address: Loopback only
 ```
+
+Now that the setup is complete, we can go to the `Intercept` tab under the `Proxy` menu to see the requests. Make sure that the interception button says `Intercept is on`.
+
+On Firfox, navigate to `http://www.fox.com`. You should see that there is a GET request for `http://www.fox.com:80`. Note that the webpage is still loading in Firefox because the request has not been sent yet.
+
+Now on Burp Suite, click the `Forward` button and you will see that the webpage loads.
